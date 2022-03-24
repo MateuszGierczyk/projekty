@@ -1,13 +1,39 @@
 <?php
 
-foreach($_POST as $key => $value){
-    //echo "$value"."<br>";
-
-if(empty($value)){
-    //echo $key."<br>";
+if(isset($_POST['terms'])){
+    exit();
+}
+if(empty($_POST['company'])){
     echo "<script> history.back(); </script>";
     exit(); 
 }
+else if(empty($_POST['f_name'])) {
+    echo "<script> history.back(); </script>";
+    exit(); 
+}
+else if(empty($_POST['l_name'])) {
+    echo "<script> history.back(); </script>";
+    exit(); 
+}
+else if(empty($_POST['email'])) {
+    echo "<script> history.back(); </script>";
+    exit(); 
+}
+else if(empty($_POST['title'])) {
+    echo "<script> history.back(); </script>";
+    exit(); 
+}
+else if(empty($_POST['phone'])) {
+    echo "<script> history.back(); </script>";
+    exit(); 
+}
+else if(empty($_POST['job'])) {
+    echo "<script> history.back(); </script>";
+    exit(); 
+}
+else if(empty($_POST['date'])) {
+    echo "<script> history.back(); </script>";
+    exit(); 
 }
     echo <<< DATA
     Company: $_POST[company]<br>
