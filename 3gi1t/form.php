@@ -11,6 +11,14 @@
     <form action = "./scripts/form_data.php" method = "post">
         <input type = "text" name = "name" placeholder = "Podaj imię"><br>
         <input type = "password" name = "pass" placeholder = "Podaj haslo"><br>
+        <select name = "city">
+            <option value = "poz">Poznań</option>
+            <option value = "gn">Gniezno</option>
+        </select>
+        <br>
+        <input type = "radio" name = "gender" value = "Mężczyzna">Mężczyzna
+        <input type = "radio" name = "gender" value = "Kobieta">Kobieta<br>
+        <input type = "checkbox" name = "terms">Regulamin<br>
         <input type = "submit" value = "Zatwierdz">
     </form>
 </body>
